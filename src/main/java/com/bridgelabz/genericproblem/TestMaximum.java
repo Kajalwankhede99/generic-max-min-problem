@@ -2,9 +2,9 @@ package com.bridgelabz.genericproblem;
 
 public class TestMaximum
 {
-    public static void getMaxFloat(Float[] arr) {
+    public static void getMaxString(String[] arr) {
 
-        float max = arr[0];
+        String max = arr[0];
         int position = 0;
         for (int i = 0; i < arr.length; i++) {
             int a = arr[i].compareTo(max);
@@ -13,10 +13,10 @@ public class TestMaximum
                 position = i;
             }
         }
-        System.out.println("Maximum float is " + max+" and its position is "+position);
+        System.out.println("Maximum string is " + max+" and its position is "+position);
     }
     public static void main(String[] args) {
-        Float[] arr = {2.3f, 7.8f, 3.4f};
-        getMaxFloat(arr);
+        String[] arr = {"Apple", "Peach", "Banana"};
+        getMaxString(arr);
     }
 }
